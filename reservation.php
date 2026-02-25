@@ -1,3 +1,36 @@
+<?php
+require 'connexion.php';
+
+$success = '';
+$error   = '';
+
+if (isset($_POST['reservation'])) {
+    $nom       = trim($_POST['nom']       ?? '');
+    $email     = trim($_POST['email']     ?? '');
+    $tele      = trim($_POST['telephone'] ?? '');
+    $nbrperson = trim($_POST['nbrperson'] ?? '');
+    $date      = trim($_POST['date']      ?? '');
+    $heure     = trim($_POST['heure']     ?? '');
+    $occasion  = trim($_POST['occasion']  ?? '');
+    $demande   = trim($_POST['demande']   ?? '');
+
+    if (empty($nom) || empty($email) || empty($nbrperson) || empty($date) || empty($heure)) {
+        $error = 'Veuillez remplir tous les champs obligatoires (*) .';
+    } else {
+        try {
+            $stmt = $connexion->prepare('
+                INSERT INTO informations
+                (nom, email, telephone, nombre_couverts, date, heure, occassion_speciale, textinformations)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ');
+            $stmt->execute([$nom, $email, $tele, $nbrperson, $date, $heure, $occasion, $demande]);
+            $success = 'Votre réservation a bien été enregistrée ! Nous vous confirmerons par email sous 24 heures.';
+        } catch (Exception $e) {
+            $error = 'Une erreur est survenue lors de l\'enregistrement. Veuillez réessayer ou nous contacter par téléphone.';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -12,6 +45,10 @@
 
   <body>
 
+<<<<<<< HEAD:reservation.html
+=======
+  
+>>>>>>> ca7f2d770bee3ed0d543167b1a7874f7b8b42d23:reservation.php
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -107,23 +144,43 @@
 
           <div class="col-lg-7">
             <div class="reservation-card p-5 rounded-3">
-              <form id="reservationForm" novalidate>
+              <?php if ($success): ?>
+              <div class="alert alert-success d-flex align-items-start gap-3 mb-4" role="alert">
+                <i class="bi bi-check-circle-fill fs-4 flex-shrink-0 mt-1" style="color:#198754"></i>
+                <div>
+                  <strong class="d-block mb-1">Réservation confirmée !</strong>
+                  <?= htmlspecialchars($success) ?>
+                </div>
+              </div>
+              <?php endif; ?>
+
+              <?php if ($error): ?>
+              <div class="alert alert-danger d-flex align-items-start gap-3 mb-4" role="alert">
+                <i class="bi bi-exclamation-circle-fill fs-4 flex-shrink-0 mt-1"></i>
+                <div>
+                  <strong class="d-block mb-1">Erreur</strong>
+                  <?= htmlspecialchars($error) ?>
+                </div>
+              </div>
+              <?php endif; ?>
+
+              <?php if (!$success): ?>              <form id="reservationForm" method='post'>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label fw-semibold">Prénom &amp; Nom *</label>
-                    <input type="text" class="form-control form-control-lg" placeholder="Jean Dupont" required />
+                    <input type="text" class="form-control form-control-lg" placeholder="Jean Dupont" name='nom' required />
                   </div>
                   <div class="col-md-6">
                     <label class="form-label fw-semibold">Email *</label>
-                    <input type="email" class="form-control form-control-lg" placeholder="jean@example.com" required />
+                    <input type="email" class="form-control form-control-lg" placeholder="jean@example.com" name='email' required />
                   </div>
                   <div class="col-md-6">
                     <label class="form-label fw-semibold">Téléphone</label>
-                    <input type="tel" class="form-control form-control-lg" placeholder="+33 6 00 00 00 00" />
+                    <input type="tel" class="form-control form-control-lg" name='telephone' placeholder="+33 6 00 00 00 00" />
                   </div>
                   <div class="col-md-6">
                     <label class="form-label fw-semibold">Nombre de Couverts *</label>
-                    <select class="form-select form-select-lg" required>
+                    <select class="form-select form-select-lg" name='nbrperson' required>
                       <option value="" selected disabled>Sélectionner</option>
                       <option>1 personne</option>
                       <option>2 personnes</option>
@@ -136,11 +193,11 @@
                   </div>
                   <div class="col-md-6">
                     <label class="form-label fw-semibold">Date *</label>
-                    <input type="date" class="form-control form-control-lg" required />
+                    <input type="date" class="form-control form-control-lg" name='date' required />
                   </div>
                   <div class="col-md-6">
                     <label class="form-label fw-semibold">Heure *</label>
-                    <select class="form-select form-select-lg" required>
+                    <select class="form-select form-select-lg" name='heure' required>
                       <option value="" selected disabled>Sélectionner</option>
                       <option>12h00</option>
                       <option>12h30</option>
@@ -156,7 +213,7 @@
                   </div>
                   <div class="col-12">
                     <label class="form-label fw-semibold">Occasion Spéciale</label>
-                    <select class="form-select">
+                    <select class="form-select" name='occasion'>
                       <option value="" selected>Aucune occasion particulière</option>
                       <option>Anniversaire</option>
                       <option>Dîner romantique</option>
@@ -167,16 +224,18 @@
                   </div>
                   <div class="col-12">
                     <label class="form-label fw-semibold">Demande Spéciale</label>
-                    <textarea class="form-control" rows="3"
+                    <textarea class="form-control" rows="3" name='demande'
                       placeholder="Allergies, préférences alimentaires, disposition de table…"></textarea>
                   </div>
                   <div class="col-12 text-center mt-3">
-                    <button type="submit" class="btn btn-gold btn-lg px-5 py-3 w-100">
+                    <button type="submit" class="btn btn-gold btn-lg px-5 py-3 w-100" name='reservation'>
                       <i class="bi bi-calendar-check me-2"></i>Confirmer la Réservation
                     </button>
                   </div>
                 </div>
               </form>
+              <?php endif; ?>
+
             </div>
           </div>
 
@@ -215,7 +274,7 @@
               <li><a href="index.html">Accueil</a></li>
               <li><a href="menu.html">Menu &amp; Galerie</a></li>
               <li><a href="equipe.html">Notre Équipe</a></li>
-              <li><a href="reservation.html">Réservation</a></li>
+              <li><a href="reservation.php">Réservation</a></li>
             </ul>
           </div>
           <div class="col-sm-6 col-lg-2">
@@ -252,9 +311,7 @@
       </div>
     </footer>
 
-    <button id="backToTop" class="btn btn-gold back-to-top" title="Retour en haut">
-      <i class="bi bi-chevron-up"></i>
-    </button>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
