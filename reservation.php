@@ -272,7 +272,7 @@ if (isset($_POST['reservation'])) {
               <li><a href="index.html">Accueil</a></li>
               <li><a href="menu.html">Menu &amp; Galerie</a></li>
               <li><a href="equipe.html">Notre Équipe</a></li>
-              <li><a href="reservation.html">Réservation</a></li>
+              <li><a href="reservation.php">Réservation</a></li>
             </ul>
           </div>
           <div class="col-sm-6 col-lg-2">
@@ -287,7 +287,7 @@ if (isset($_POST['reservation'])) {
           <div class="col-lg-3">
             <h6 class="footer-heading mb-3">Contact</h6>
             <ul class="list-unstyled text-muted small">
-              <li class="mb-2"><i class="bi bi-geo-alt text-white me-2"></i>12 Rue de la Paix, Paris 75001</li>
+              <li class="mb-2"><i class="bi bi-geo-alt text-gold me-2"></i>12 Rue de la Paix, Paris 75001</li>
               <li class="mb-2"><i class="bi bi-telephone text-gold me-2"></i>+33 1 23 45 67 89</li>
               <li class="mb-2"><i class="bi bi-envelope text-gold me-2"></i>contact@lefestinroyal.fr</li>
               <li class="mb-2"><i class="bi bi-clock text-gold me-2"></i>Lun–Ven · 12h–23h</li>

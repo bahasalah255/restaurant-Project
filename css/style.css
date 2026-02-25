@@ -276,6 +276,18 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ---------- Footer ---------- */
+.mb-2{
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-family: var(--font-sans);
+    cursor: pointer;
+}
+footer-links a {
+   --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-family: var(--font-sans);
+    cursor: pointer;
+}
 .text-muted {
     --bs-text-opacity: 1;
     color: rgba(255, 255, 255, 0.6) !important;
@@ -298,7 +310,7 @@ h1, h2, h3, h4, h5 {
 .footer-links { list-style: none; padding: 0; }
 .footer-links li { margin-bottom: 8px; }
 .footer-links a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color var(--transition);
