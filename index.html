@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Festin Royal – Restaurant Gastronomique</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">
+          <span class="brand-icon">✦</span> Le Festin Royal
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#about">Notre Histoire</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#chefs">Nos Chefs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Avis</a></li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-gold px-3" href="#reservation">Réserver</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="hero-overlay"></div>
+      <div class="container text-center text-white position-relative z-1">
+        <p class="hero-subtitle letter-spacing">BIENVENUE AU</p>
+        <h1 class="hero-title display-2 fw-bold">Le Festin Royal</h1>
+        <p class="hero-tagline fs-5 fw-light mt-3 mb-5">
+          Une expérience culinaire d'exception au cœur de Paris
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="#menu" class="btn btn-gold btn-lg px-5">Découvrir le Menu</a>
+          <a href="#reservation" class="btn btn-outline-light btn-lg px-5">Réserver une Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BANNER INFO ===== -->
+    <section class="info-banner py-4 bg-dark">
+      <div class="container">
+        <div class="row text-center text-white g-3">
+          <div class="col-sm-6 col-md-3">
+            <i class="bi bi-clock fs-4 text-gold"></i>
+            <p class="mb-0 mt-1 small">Lun – Ven : 12h – 23h</p>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <i class="bi bi-geo-alt fs-4 text-gold"></i>
+            <p class="mb-0 mt-1 small">12 Rue de la Paix, Paris 75001</p>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <i class="bi bi-telephone fs-4 text-gold"></i>
+            <p class="mb-0 mt-1 small">+33 1 23 45 67 89</p>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <i class="bi bi-star fs-4 text-gold"></i>
+            <p class="mb-0 mt-1 small">3 Étoiles Michelin</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-img-wrapper position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+                alt="Restaurant intérieur"
+                class="img-fluid rounded shadow-lg"
+              />
+              <div class="about-badge">
+                <span class="display-6 fw-bold">25</span>
+                <small>ans d'excellence</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p class="section-label text-gold letter-spacing">NOTRE HISTOIRE</p>
+            <h2 class="section-title">Une Passion pour<br />la Gastronomie Française</h2>
+            <p class="text-muted mt-4">
+              Fondé en 1999 par le Chef Jean-Marc Dupont, Le Festin Royal s'est imposé comme
+              l'une des tables les plus réputées de Paris. Notre philosophie : sublimer les
+              produits du terroir français avec créativité et rigueur.
+            </p>
+            <p class="text-muted">
+              Chaque plat est une œuvre d'art, conçue pour ravir les sens et créer des
+              souvenirs inoubliables. Nous travaillons uniquement avec des producteurs locaux
+              et des ingrédients de saison.
+            </p>
+            <div class="row mt-4 g-3">
+              <div class="col-6">
+                <div class="about-stat">
+                  <h3 class="text-gold">500+</h3>
+                  <p class="mb-0 small text-muted">Références de vins</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="about-stat">
+                  <h3 class="text-gold">12</h3>
+                  <p class="mb-0 small text-muted">Chefs étoilés</p>
+                </div>
+              </div>
+            </div>
+            <a href="#reservation" class="btn btn-gold mt-4 px-4">Réserver Maintenant</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section id="menu" class="section-padding bg-light-beige">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+          <p class="section-label text-gold letter-spacing">NOTRE CARTE</p>
+          <h2 class="section-title">Menu Gastronomique</h2>
+          <p class="text-muted mx-auto" style="max-width: 550px">
+            Des créations culinaires inspirées des saisons, sublimées par notre équipe de chefs.
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-pills justify-content-center mb-5 gap-2" id="menuTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link menu-tab active" id="entrees-tab" data-bs-toggle="pill"
+              data-bs-target="#entrees" type="button">Entrées</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link menu-tab" id="plats-tab" data-bs-toggle="pill"
+              data-bs-target="#plats" type="button">Plats</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link menu-tab" id="desserts-tab" data-bs-toggle="pill"
+              data-bs-target="#desserts" type="button">Desserts</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link menu-tab" id="vins-tab" data-bs-toggle="pill"
+              data-bs-target="#vins" type="button">Vins</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="menuTabsContent">
+
+          <!-- Entrées -->
+          <div class="tab-pane fade show active" id="entrees" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Foie Gras de Canard</h5>
+                    <p class="text-muted small">Chutney de figues, brioche toastée, fleur de sel</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">28 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Velouté de Saint-Jacques</h5>
+                    <p class="text-muted small">Émulsion de truffe blanche, caviar d'Aquitaine</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">32 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Tartare de Langoustines</h5>
+                    <p class="text-muted small">Avocat, agrumes, huile d'olive infusée</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">24 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Salade de Homard Breton</h5>
+                    <p class="text-muted small">Vinaigrette aux herbes fraîches, œuf de caille</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">36 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plats -->
+          <div class="tab-pane fade" id="plats" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Filet de Bœuf Rossini</h5>
+                    <p class="text-muted small">Escalope de foie gras, sauce Périgueux, pommes dauphine</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">62 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Turbot Rôti en Croûte d'Herbes</h5>
+                    <p class="text-muted small">Fondue de poireaux, beurre blanc au champagne</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">54 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Canard à l'Orange Revisité</h5>
+                    <p class="text-muted small">Magret laqué, purée de céleri, jus d'agrumes réduit</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">48 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Agneau de Lait des Pyrénées</h5>
+                    <p class="text-muted small">Jus d'herbes, légumes primeurs, gnocchis à la truffe</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">58 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="tab-pane fade" id="desserts" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Soufflé au Grand Marnier</h5>
+                    <p class="text-muted small">Glace à la vanille Bourbon, tuile dentelle</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">18 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Millefeuille à la Vanille</h5>
+                    <p class="text-muted small">Feuilletage caramélisé, crème légère, fraises des bois</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">16 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Tarte Tatin Revisitée</h5>
+                    <p class="text-muted small">Pommes caramélisées, glace calvados, crème normande</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">14 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Assiette de Fromages Affinés</h5>
+                    <p class="text-muted small">Sélection de la Fromagerie Bordier, pain aux noix</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">22 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vins -->
+          <div class="tab-pane fade" id="vins" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Château Margaux 2018</h5>
+                    <p class="text-muted small">Bordeaux, Médoc – Notes de fruits rouges et cèdre</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">420 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Meursault Perrières 2020</h5>
+                    <p class="text-muted small">Bourgogne Blanc – Minéralité, beurre frais, fleurs blanches</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">180 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Dom Pérignon 2013</h5>
+                    <p class="text-muted small">Champagne – Bulles fines, agrumes, mie de pain toastée</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">350 €</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="menu-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="menu-item-title">Château d'Yquem 2015</h5>
+                    <p class="text-muted small">Sauternes – Miel, abricot confit, safran, accord desserts</p>
+                  </div>
+                  <span class="menu-price text-gold fw-bold ms-3">280 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /tab-content -->
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-outline-dark px-5">Télécharger la Carte Complète</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label text-gold letter-spacing">VISUEL</p>
+          <h2 class="section-title">Notre Galerie</h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-6 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80"
+                alt="Plat gastronomique" class="img-fluid rounded" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80"
+                alt="Salle du restaurant" class="img-fluid rounded" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80"
+                alt="Dessert" class="img-fluid rounded" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&q=80"
+                alt="Chef en cuisine" class="img-fluid rounded" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80"
+                alt="Langoustines" class="img-fluid rounded" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80"
+                alt="Intérieur luxueux" class="img-fluid rounded" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CHEFS ===== -->
+    <section id="chefs" class="section-padding bg-light-beige">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label text-gold letter-spacing">L'ÉQUIPE</p>
+          <h2 class="section-title">Nos Chefs</h2>
+          <p class="text-muted mx-auto" style="max-width: 500px">
+            Des artistes passionnés qui transforment les meilleurs produits en expériences mémorables.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-sm-6 col-lg-3">
+            <div class="chef-card text-center">
+              <div class="chef-img-wrapper mx-auto">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80"
+                  alt="Chef Jean-Marc Dupont" class="img-fluid rounded-circle" />
+              </div>
+              <h5 class="mt-4 mb-1">Jean-Marc Dupont</h5>
+              <p class="text-gold small letter-spacing mb-2">CHEF EXÉCUTIF</p>
+              <p class="text-muted small">3 étoiles Michelin · 25 ans d'expérience</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="chef-card text-center">
+              <div class="chef-img-wrapper mx-auto">
+                <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&q=80"
+                  alt="Chef Élodie Martin" class="img-fluid rounded-circle" />
+              </div>
+              <h5 class="mt-4 mb-1">Élodie Martin</h5>
+              <p class="text-gold small letter-spacing mb-2">CHEF PÂTISSIÈRE</p>
+              <p class="text-muted small">Meilleure Ouvrière de France 2018</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="chef-card text-center">
+              <div class="chef-img-wrapper mx-auto">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&q=80"
+                  alt="Chef Arnaud Leroy" class="img-fluid rounded-circle" />
+              </div>
+              <h5 class="mt-4 mb-1">Arnaud Leroy</h5>
+              <p class="text-gold small letter-spacing mb-2">CHEF SOMMELIER</p>
+              <p class="text-muted small">Sommelier de l'Année 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="section-padding bg-dark text-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label text-gold letter-spacing">TÉMOIGNAGES</p>
+          <h2 class="section-title text-white">Ce que disent nos Clients</h2>
+        </div>
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-item text-center mx-auto" style="max-width: 700px">
+                <div class="stars text-gold mb-3">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fs-5 fst-italic">
+                  "Une expérience absolument sublime. Le foie gras et le filet de bœuf Rossini
+                   étaient d'une perfection rare. Le service est irréprochable. Je recommande
+                   vivement à quiconque cherche une vraie expérience gastronomique."
+                </p>
+                <div class="mt-4">
+                  <strong>Sophie Beaumont</strong>
+                  <p class="text-muted small">Paris, France</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item text-center mx-auto" style="max-width: 700px">
+                <div class="stars text-gold mb-3">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fs-5 fst-italic">
+                  "Le meilleur restaurant dans lequel j'ai eu la chance de dîner. La carte des
+                   vins est extraordinaire et le service d'une élégance incomparable. Un must
+                   absolu lors de chaque visite à Paris."
+                </p>
+                <div class="mt-4">
+                  <strong>Alessandro Ferrari</strong>
+                  <p class="text-muted small">Milan, Italie</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item text-center mx-auto" style="max-width: 700px">
+                <div class="stars text-gold mb-3">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fs-5 fst-italic">
+                  "Le soufflé au Grand Marnier est simplement divin. Chaque bouchée est un voyage
+                   dans l'art culinaire français. Le cadre est magnifique et l'équipe est
+                   passionnée et attentionnée."
+                </p>
+                <div class="mt-4">
+                  <strong>Claire Fontaine</strong>
+                  <p class="text-muted small">Lyon, France</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0"
+              class="carousel-dot active" aria-current="true"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+              class="carousel-dot"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+              class="carousel-dot"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESERVATION ===== -->
+    <section id="reservation" class="section-padding reservation-section">
+      <div class="reservation-overlay"></div>
+      <div class="container position-relative z-1">
+        <div class="text-center mb-5 text-white">
+          <p class="section-label text-gold letter-spacing">CONTACTER NOUS</p>
+          <h2 class="section-title text-white">Réserver une Table</h2>
+          <p class="opacity-75">Nous vous confirmerons votre réservation sous 24 heures.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="reservation-card p-5 rounded-3">
+              <form id="reservationForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Prénom & Nom *</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Jean Dupont" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Email *</label>
+                    <input type="email" class="form-control form-control-lg" placeholder="jean@example.com" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Téléphone</label>
+                    <input type="tel" class="form-control form-control-lg" placeholder="+33 6 00 00 00 00" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Nombre de Couverts *</label>
+                    <select class="form-select form-select-lg" required>
+                      <option value="" selected disabled>Sélectionner</option>
+                      <option>1 personne</option>
+                      <option>2 personnes</option>
+                      <option>3 personnes</option>
+                      <option>4 personnes</option>
+                      <option>5 personnes</option>
+                      <option>6 personnes</option>
+                      <option>+ de 6 personnes</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Date *</label>
+                    <input type="date" class="form-control form-control-lg" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Heure *</label>
+                    <select class="form-select form-select-lg" required>
+                      <option value="" selected disabled>Sélectionner</option>
+                      <option>12h00</option>
+                      <option>12h30</option>
+                      <option>13h00</option>
+                      <option>13h30</option>
+                      <option>19h00</option>
+                      <option>19h30</option>
+                      <option>20h00</option>
+                      <option>20h30</option>
+                      <option>21h00</option>
+                      <option>21h30</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-semibold">Demande Spéciale</label>
+                    <textarea class="form-control" rows="3"
+                      placeholder="Allergies, occasion spéciale, préférences…"></textarea>
+                  </div>
+                  <div class="col-12 text-center mt-3">
+                    <button type="submit" class="btn btn-gold btn-lg px-5 py-3">
+                      <i class="bi bi-calendar-check me-2"></i>Confirmer la Réservation
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4 mb-4">
+          <!-- Brand -->
+          <div class="col-lg-4">
+            <h5 class="footer-brand mb-3">
+              <span class="text-gold">✦</span> Le Festin Royal
+            </h5>
+            <p class="text-muted small">
+              Un restaurant gastronomique d'exception au cœur de Paris. Nous vous accueillons
+              pour une expérience culinaire inoubliable.
+            </p>
+            <div class="social-links mt-3 d-flex gap-3">
+              <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <!-- Links -->
+          <div class="col-sm-6 col-lg-2 offset-lg-1">
+            <h6 class="footer-heading mb-3">Navigation</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#about">Notre Histoire</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Galerie</a></li>
+              <li><a href="#chefs">Nos Chefs</a></li>
+              <li><a href="#reservation">Réservation</a></li>
+            </ul>
+          </div>
+          <!-- Services -->
+          <div class="col-sm-6 col-lg-2">
+            <h6 class="footer-heading mb-3">Services</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Privatisation</a></li>
+              <li><a href="#">Événements</a></li>
+              <li><a href="#">Cours de Cuisine</a></li>
+              <li><a href="#">Accord Mets-Vins</a></li>
+              <li><a href="#">Carte Cadeau</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div class="col-lg-3">
+            <h6 class="footer-heading mb-3">Contact</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2">
+                <i class="bi bi-geo-alt text-gold me-2"></i>12 Rue de la Paix, Paris 75001
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone text-gold me-2"></i>+33 1 23 45 67 89
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope text-gold me-2"></i>contact@lefestinroyal.fr
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-clock text-gold me-2"></i>Lun–Ven · 12h–23h
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <small class="text-muted">
+              &copy; 2026 Le Festin Royal. Tous droits réservés.
+            </small>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+            <small class="text-muted">
+              <a href="#" class="text-muted text-decoration-none me-3">Mentions légales</a>
+              <a href="#" class="text-muted text-decoration-none">Politique de confidentialité</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="btn btn-gold back-to-top" title="Retour en haut">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
