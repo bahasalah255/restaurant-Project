@@ -7,9 +7,11 @@
 
   /* ---- Navbar: Shrink on scroll ---- */
   const nav = document.getElementById("mainNav");
+  // On inner pages the navbar already has .scrolled baked in; keep it always
+  const navAlwaysScrolled = nav.classList.contains("scrolled");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 60) {
+    if (window.scrollY > 60 || navAlwaysScrolled) {
       nav.classList.add("scrolled");
     } else {
       nav.classList.remove("scrolled");
