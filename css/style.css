@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5 {
 .footer-links { list-style: none; padding: 0; }
 .footer-links li { margin-bottom: 8px; }
 .footer-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color var(--transition);
