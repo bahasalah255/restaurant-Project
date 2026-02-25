@@ -45,10 +45,7 @@ if (isset($_POST['reservation'])) {
 
   <body>
 
-<<<<<<< HEAD:reservation.html
-=======
-  
->>>>>>> ca7f2d770bee3ed0d543167b1a7874f7b8b42d23:reservation.php
+
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
       <div class="container">
         <a class="navbar-brand" href="index.html">
