@@ -149,6 +149,8 @@ The website is fully responsive and optimized for:
 ## 👨‍💻 Author
 
 Developed by: Salah Baha  
+Ayoub Aabidi
+Walid Redouane
 GitHub: https://github.com/bahasalah255
 
 ---
