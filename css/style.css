@@ -276,6 +276,12 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ---------- Footer ---------- */
+.text-muted {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-family: var(--font-sans);
+    cursor: pointer;
+}
 .footer { font-family: var(--font-sans); }
 .footer-brand {
   font-family: var(--font-serif);
