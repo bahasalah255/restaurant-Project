@@ -3,7 +3,7 @@ $host = 'localhost';
 $dbname = 'cafedata';
 $port = "3306";
 $username = 'root';
-$password = 'salah123';
+$password = '';
 
 try {
     $connexion = new PDO("mysql:host=$host;port=$port;dbname=$dbname;charset=utf8", $username, $password);
